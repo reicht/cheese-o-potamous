@@ -6,7 +6,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <nav class='navbar navbar-default'>
+  <%= react_component("nav_bar")%>
+  <!-- <nav class='navbar navbar-default'>
       <ul class="nav navbar-nav navbar">
         <li><%= link_to "Return to Home", root_path, class: "btn btn-info" %></li>
         <% unless signed_in? %>
@@ -16,7 +17,7 @@
           <li> <%= link_to "Sign Out", sign_out_path, method: :DELETE, class: "btn btn-danger" %> </li>
         <% end %>
       </ul>
-    </nav>
+    </nav> -->
 
     <div class='container'>
       <%= flash[:notice] %>
