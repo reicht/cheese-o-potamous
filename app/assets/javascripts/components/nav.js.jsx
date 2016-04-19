@@ -2,7 +2,7 @@ var Navbar = ReactBootstrap.Navbar;
 var NavItem = ReactBootstrap.NavItem;
 var Nav = ReactBootstrap.Nav;
 
-var nav_bar = React.createClass({
+var Nav_bar = React.createClass({
 
   render: function () {
     return (
@@ -16,6 +16,9 @@ var nav_bar = React.createClass({
         <Navbar.Collapse>
           <Nav>
             <NavItem eventKey={1} href="/users">Users</NavItem>
+            <NavItem eventKey={2} href="/users/new">Register</NavItem>
+            <NavItem eventKey={3} href="/sign_in">Login</NavItem>
+            <NavItem eventKey={4} href="/sign_out">Logout</NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
