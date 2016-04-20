@@ -1,5 +1,7 @@
 <h1>Cheeses#index</h1>
 <hr>
+<%= react_component('Cheeses', cheeses: @cheeses.all) %>
+<hr>
 <% @cheeses.each do |cheese| %>
   <div class='col-md-offset-2 col-md-6 target'>
     <%= link_to cheese.name, cheese, class: 'btn btn-default' %>
