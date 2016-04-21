@@ -19,8 +19,10 @@ var Cheese = React.createClass({
   render: function() {
     return (
       <div className = "row">
-        <div>Cheese: {this.props.name}</div>
-        <div className='btn btn-primary' onClick={this.handleSubmit}>Love Dis Cheeze</div>
+        <a href = {'/cheeses/' + this.props.id}>
+        <div className='btn btn-info'>Cheese: {this.props.name}</div>
+        </a>
+        <div className='btn btn-primary pull-right' onClick={this.handleSubmit}>Love Dis Cheeze</div>
       </div>
     );
   }

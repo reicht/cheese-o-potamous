@@ -1,7 +1,3 @@
-<h1>Users#index</h1>
+<h1>Cheese Lovers Club</h1>
 <hr>
-<% @users.each do |user| %>
-  <div class='col-md-offset-2 col-md-6 target'>
-    <%= link_to user.username, user, class: 'btn btn-default' %>
-  </div>
-<% end %>
+<%= react_component('Users', users: @users.all) %>

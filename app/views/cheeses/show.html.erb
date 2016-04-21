@@ -1,4 +1,8 @@
-<h1>Cheeses#show</h1>
+<h1>Viewing a cheese</h1>
 <p>Find me in app/views/cheeses/show.html.erb</p>
 
 <%= react_component("Cheese", name: @cheese.name, id: @cheese.id) %>
+<hr>
+<div>People who love this cheese:</div>
+
+<%= react_component("Users", users:@cheese.users) %>
